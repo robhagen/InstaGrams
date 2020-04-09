@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0px;
+  background-image: linear-gradient(#A8C07B, #DEE3D5);
 }
 
 #container {
@@ -7,21 +8,63 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  border: 0px solid grey;
 }
 
 #mainContent {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 0px solid grey;
+}
+
+#buttonCalculate {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  background-color: #80BA5D;
+  border-radius: 10px;
+  border: 2px solid #1A4A00;
+  transition-duration: 0.4s;
+  width: 200px;
+  height: 50px;
+}
+
+#buttonCalculate:hover {
+  background-color: #DEE3D5;
 }
 
 .selectionBoxes {
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 30px;
 }
 
 .label {
-  font-size: 21px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 50px;
+}
+
+/*Media Quesries start here */
+
+@media screen and (max-width: 992px) {
+  #container {
+    align-items: flex-start;
+  }
+  .selectionBoxes {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 50px;
+  }
+  .label {
+    font-size: 50px;
+  }
+  #buttonCalculate {
+    width: 400px;
+    height: 100px;
+  }
+  h3 {
+    font-size: 70px;
+  }
 }
