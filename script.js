@@ -13,7 +13,7 @@ buttonCalculate.onclick = function() {
   checkAmountOfCups();
   checkIngredientType();
   result = amountOfCups * ingredientType;
-  answer.innerHTML = result + " " + measurementUnit;
+  answer.innerHTML = "Alright, in the metric system that would be" + " " + result + " " + measurementUnit;
 };
 
 // Function that check how many cups the user wants to convert and updates the current amount
