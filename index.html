@@ -7,28 +7,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <div id="mainContent">
-        <select class="selectionBoxes" id="amountOfCups" name="integer1" size="1">
-          <option value="0.25">quarter</option>
-          <option value="0.5">half</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <label class="label" for="firstNumber">cups of</label>
-        <select class="selectionBoxes" id="typeOfIngredient" name="integer2" size="1">
-          <option value="237">Water</option>
-          <option value="237">Soymilk</option>
-          <option value="200">Granulated Sugar</option>
-          <option value="125">Powdered Sugar</option>
-          <option value="136">Flour</option>
-          <option value="227">Butter</option>
-        </select>
-        <label class="label" for="secondNumber">is</label>
-        <h3 id="answer">&nbsp</h3>
-        <button type="button" id="buttonCalculate">Calculate!</button>
+    <div class="grid">
+      <div class="header">
+        <h1>Welcome to the alpha-version of InstaGrams</h1>
+        <h3>This version was published on 15-04-2020 at 22:00</h3>
+      </div>
+      <div class="mainContent">
+        <div class="choicefields">
+          <label class="label" for="firstNumber">How many cups do you need?</label>
+          <select class="selectionBoxes" id="amountOfCups" name="integer1" size="1">
+            <option value="0.25">quarter</option>
+            <option value="0.5">half</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <br><br>
+          <label class="label" for="secondNumber">Of what ingredient?</label>
+          <select class="selectionBoxes" id="typeOfIngredient" name="integer2" size="1">
+            <option value="237">Water</option>
+            <option value="237">Soymilk</option>
+            <option value="200">Granulated Sugar</option>
+            <option value="125">Powdered Sugar</option>
+            <option value="136">Flour</option>
+            <option value="227">Butter</option>
+          </select>
+        </div>
+        <div class="answer">
+          <h3 id="answer">&nbsp</h3>
+        </div>
+        <div class="button">
+          <button type="button" id="buttonCalculate">Calculate!</button>
+        </div>
+      </div>
+      <div class="footer">
+        <h4>This is the end of the page, here be monsters...</h4>
       </div>
     </div>
     <script type="text/javascript" src="script.js">
