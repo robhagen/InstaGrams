@@ -3,7 +3,7 @@ body {
   width: 100vw;
 }
 
-
+/*
 .grid > div {
   border: 1px solid black;
 }
@@ -11,7 +11,7 @@ body {
 .mainContent > div {
   border: 1px solid black;
 }
-
+*/
 
 .grid {
   display:grid;
