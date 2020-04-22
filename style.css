@@ -30,7 +30,7 @@ body {
 
 .mainContent {
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto;
   text-align: center;
 }
 
