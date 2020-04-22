@@ -1,6 +1,7 @@
 body {
   margin: 0;
   width: 100vw;
+  height: 100vh;
 }
 
 /*
@@ -30,12 +31,13 @@ body {
 .mainContent {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  max-height: 300px;
   text-align: center;
 }
 
 .answer {
   text-align: center;
-  max-height: 50px;
+  max-height: 30px;
 }
 
 .button {
