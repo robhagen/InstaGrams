@@ -3,8 +3,6 @@ html {
   padding: 0;
 }
 
-/* Background image photo by Ales Krivec on Unsplash */
-
 body {
   margin: 0;
   padding: 0;
@@ -12,22 +10,13 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  /* Background image photo by Ales Krivec on Unsplash */
   background-image: url("bodybg.jpg");
   background-size: cover;
   background-position: right;
   font-family: 'Montserrat', sans-serif;
   color: #313030;
 }
-
-/*
-.grid > div {
-  border: 1px solid black;
-}
-
-.mainContent > div {
-  border: 1px solid black;
-}
-*/
 
 .grid {
   display:grid;
@@ -44,15 +33,17 @@ body {
   display: grid;
   flex-direction: column;
   text-align: center;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #313030;
 }
 
+/*Navigation*/
 #nav {
   display: flex;
   justify-content: space-around;
 }
 
 #nav a {
+  color: #313030;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 2em;
@@ -93,20 +84,44 @@ body {
   height: auto;
 }
 
+
+/*Media Queries*/
 @media screen and (max-width: 1025px) {
   .grid {
     width: 100vw;
   }
+  .header {
+    border-bottom: 0px solid #313030;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   #nav a {
     text-transform: lowercase;
-    line-height: 1em;
+    line-height: 3em;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 9em;
+  }
+  .mainContent {
+    margin-top: 10em;
   }
   .label {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  input {
+    height: 2em;
+    width: 5em;
+  }
+  select {
+    height: 2em;
+    width: auto;
   }
   #buttonCalculate {
     height: 5em;
     width: 10em;
+    font-size: 2em;
   }
   #nav a {
     font-size: 1.5em;
