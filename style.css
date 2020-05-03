@@ -1,7 +1,19 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image photo by Ales Krivec on Unsplash */
+
 body {
   margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("bodybg.jpg");
+  background-size: cover;
 }
 
 /*
@@ -17,31 +29,82 @@ body {
 .grid {
   display:grid;
   height: 100vh;
+  width: 40vw;
   grid-template-columns: auto;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    width: 90vw;
+  }
+  .label {
+    font-size: 2em;
+  }
+  #buttonCalculate {
+    height: 5em;
+    width: 10em;
+  }
+  #nav a {
+    font-size: 1.5em;
+  }
+  .answer {
+    font-size: 2em;
+  }
 }
 
 .header {
   display: grid;
-  align-content: flex-start;
+  flex-direction: column;
   text-align: center;
+  border-bottom: 3px solid black;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2em;
 }
 
 .mainContent {
   display: grid;
-  grid-template-rows: auto auto auto;
+  margin-top: 1em;
+  grid-template-rows: auto auto 2fr;
   text-align: center;
+  width: 100%;
 }
 
 .answer {
   text-align: center;
+  width: 100%;
 }
 
 .button {
   text-align: center;
+  width: 100%;
+}
+
+#buttonCalculate {
+  padding: 10px;
+  border-radius: 0.5em;
 }
 
 .footer {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
