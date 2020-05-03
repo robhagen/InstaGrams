@@ -14,6 +14,7 @@ body {
   justify-content: center;
   background-image: url("bodybg.jpg");
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -35,31 +36,6 @@ body {
   justify-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1.5em;
-}
-
-@media screen and (max-width: 1024px) {
-  .grid {
-    width: 60vw;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .grid {
-    width: 90vw;
-  }
-  .label {
-    font-size: 2em;
-  }
-  #buttonCalculate {
-    height: 5em;
-    width: 10em;
-  }
-  #nav a {
-    font-size: 1.5em;
-  }
-  .answer {
-    font-size: 2em;
-  }
 }
 
 .header {
@@ -105,6 +81,38 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
+}
+
+.footer img {
+  width: 5em;
+  height: auto;
+}
+
+@media screen and (max-width: 724px) {
+  .grid {
+    width: 100vw;
+  }
+  #nav a {
+    text-transform: lowercase;
+    line-height: 1em;
+  }
+  .label {
+    font-size: 1.5em;
+  }
+  #buttonCalculate {
+    height: 5em;
+    width: 10em;
+  }
+  #nav a {
+    font-size: 1.5em;
+  }
+  .answer {
+    font-size: 2em;
+  }
+  .footer {
+    font-size: 1.5em;
+  }
 }
