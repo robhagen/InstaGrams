@@ -14,6 +14,7 @@ body {
   justify-content: center;
   background-image: url("bodybg.jpg");
   background-size: cover;
+  background-position: right;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,7 +31,7 @@ body {
 .grid {
   display:grid;
   height: 100vh;
-  width: 40vw;
+  width: 100vw;
   grid-template-columns: auto;
   grid-template-rows: auto 1fr auto;
   justify-items: center;
@@ -92,9 +93,6 @@ body {
 }
 
 @media screen and (max-width: 724px) {
-  .grid {
-    width: 100vw;
-  }
   #nav a {
     text-transform: lowercase;
     line-height: 1em;
@@ -116,3 +114,8 @@ body {
     font-size: 1.5em;
   }
 }
+
+@media screen and (min-width: 724px) {
+  .grid {
+    width: 40vw;
+  }
